@@ -24,8 +24,10 @@ url                      : "https://blog.one0.me"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "wonyoungpark.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
+header:
+  images                 : /assets/images/iron-man.jpg
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -197,7 +199,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:	Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -267,3 +269,6 @@ defaults:
       comments: true # true
       share: true # 포스트 공유 기능을 활성화 할 것인지 정한다. 기본값은 true이다.
       related: true
+      toc: true
+      toc_label: "목차"
+      classes: wide
