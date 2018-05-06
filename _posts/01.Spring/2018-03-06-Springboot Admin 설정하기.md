@@ -1,4 +1,5 @@
 ---
+layout: posts
 title: "Springboot Admin 설정하기"
 categories: Spring
 tags: spring springboot admin
