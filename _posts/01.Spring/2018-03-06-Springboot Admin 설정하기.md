@@ -1,11 +1,8 @@
 ---
-layout: posts
 title: "Springboot Admin 설정하기"
 categories: Spring
 tags: spring springboot admin
 ---
-
-
 
 ## 1. 스프링부트 관리자란?
 
@@ -37,7 +34,7 @@ Spring Boot Admin 은 애플리케이션을 HTTP 통신을 통해 관리하고 �
 
 현재(2018.03.06)기준으로 스프링부트 어드민 2.0.0이 정식 릴리즈가 되지 않았기 때문에 아래와 같은 스냅샷 레파지토리를 등록해야 합니다.(정식 릴리즈가되면 해당 레파지토리는 제거해주시면 됩니다)
 
-```grad
+```gradle
 repositories {
     mavenCentral()
 	maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
@@ -85,6 +82,7 @@ server:
 
 스프링부트 클라이언트 또한 스냅샷 레파지토리를 등록해야 합니다. 그리고 애플리케이션의 보안을 위해서 `spring-boot-starter-security` 모듈도 추가해줍니다.
 
+
 ```gradle
 repositories {
 	mavenCentral()
@@ -98,8 +96,6 @@ dependencies {
 	compile('de.codecentric:spring-boot-admin-starter-client:2.0.0-SNAPSHOT')
 }
 ```
-
-
 
 #### 2.3.2. 프로퍼티 설정
 
@@ -164,7 +160,6 @@ public class SecurityConfig {
 ## 4. 결론
 
 [스프링부트 어드민 레퍼런스](http://codecentric.github.io/spring-boot-admin/current/#_what_is_spring_boot_admin)에서 보다 자세한 설명과 정보를 확인하실 수 있으며, 예제소스는 [제 github](https://github.com/WonYoungPark/springboot-admin-sample)에 올려놓았습니다. 해당 포스팅에서는 좀더 세분화되는 설정값등을 다루지 않지만 구글링을 통해서 충분이 정보를 검색하실 수 있을것입니다. 추후에 시간이 된다면 모니터링 값을 가지고 이메일 혹은 슬랙을 통해 노티를 발행하는 방법 또한 다루어 보도록 하겠습니다.
-
 
 
 ## 5. Reference
