@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "박원영"
-  avatar           : "/assets/images/박원영-반.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Back-End 개발자" # 이름 아래 나타날 자신의 설명
   location         : "Seoul, Korea"
   email            : "wyparks2@gmail.com"

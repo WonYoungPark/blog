@@ -206,3 +206,55 @@ x509: certificate signed by unknown authority
 }
 ```
 
+
+
+### Docker Remote API
+
+도커 데몬이 수신할 수 있는 도커 엔진API는 세가지 소켓 유형을 가지고 있습니다.(`unix`, `tcp`, `fd`).
+
+도커는 기본적으로 unix 소켓이 활성화 되어 있습니다. 도커 데몬에 원격으로 액세스하고 싶을 경우 `tcp` 소켓을 활성화 해야합니다.
+
+
+
+### 도커 데몬
+
+- conf 설정
+
+```shell
+> vi /etc/systemd/system/docker.service.d/hosts.conf
+
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375 
+
+> systemctl daemon-reload
+> systemctl restart docker
+```
+
+
+
+### 도커 클라이언트
+
+- `-H` 옵션을 사용
+
+```shell
+> dockerd -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375
+```
+
+
+
+- 도커 클라이언트는 `DOCKER_HOST` 환경변수 또는 `-H` 옵션을 사용하여 도커 데몬과 통신할 수 있습니다.
+
+```shell
+# 옵션을 사용한 방법
+> docker -H tcp://0.0.0.0:2375 ps
+
+#or
+
+# 환경변수를 사용한 방법
+> export DOCKER_HOST="tcp://0.0.0.0:2375"
+> docker ps
+
+#or
+> DOCKER_HOST=tcp://0.0.0.0:2375 docker ps
+```
