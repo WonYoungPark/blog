@@ -90,7 +90,7 @@ Service Registry 개념에 대해서 살펴보았습니다. 서비스 인스턴�
 
 등록/해지를 처리하는 몇가지 방법이 존재합니다.
 
-#### Self‑Registration Pattern
+### Self‑Registration Pattern
 
 서비스 인스턴스가 **Service Registry에 등록/해지의 책임을 가집니다.**
 
@@ -100,12 +100,12 @@ Self-Registration Pattern 에는 다양한 장점과 단점이 존재합니다.
 
 
 
-##### 장점
+#### 장점
 
 - 비교적 간단하다.
 - 별도의 시스템 컴포넌트가 필요로 하지 않다.
 
-##### 단점
+#### 단점
 
 - 서비스 인스턴스와 Service Registry의 높은 결합도
 - 서비스 인스턴스에서 Service Registry에 등록/해지 관련 로직은 직접 구현해야 한다.
@@ -113,7 +113,7 @@ Self-Registration Pattern 에는 다양한 장점과 단점이 존재합니다.
 
 
 
-#### Third‑Party Registration Pattern
+### Third‑Party Registration Pattern
 
 서비스 인스턴스가 **Service Registry에 등록/해지의 책임이 없습니다.** 대신 Registrar가 이를 수행합니다.
 
@@ -125,13 +125,15 @@ Registrar는 실행 중인 서비스 인스턴스에 폴링하거나 이벤트�
 
 Third‑Party Registration Pattern 에는 다양한 장점과 단점이 존재합니다.
 
-##### 장점
+
+
+#### 장점
 
 - 서비스 인스턴스와 Service Registry의 낮은 결합도
 - 서비스 인스턴스에서 Service Registry에 등록/해지 관련 로직을 구현할 필요가 없다.
 - 정상적으로 서비스 인스턴스가 종료되었더라도 높은 안전성을 보장한다.
 
-##### 단점
+#### 단점
 
 - 서비스 인스턴스의 동록이 중앙 집중식으로 처리된다.
 - 시스템 컴포넌트 관리에 따른 관리 포인트가 추가됩니다.
