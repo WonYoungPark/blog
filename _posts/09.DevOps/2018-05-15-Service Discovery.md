@@ -1,7 +1,7 @@
 ---
 title: "Service Discovery"
 categories: DevOps
-tags: "DevOps" "Service Discovery" "Service Registry"
+tags: [DevOps, Service Discovery, Service Registry]
 published: true
 comments: true
 ---
