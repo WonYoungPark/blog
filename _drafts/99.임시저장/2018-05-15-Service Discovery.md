@@ -20,7 +20,7 @@ REST API를 통해 서비스를 호출 해야 한다고 가정해 보도록 하�
 
 서비스 인스턴스가 많을수록 미리 정의된(고정적인) 포트를 사용한다면 충돌 될 가능성이 많아집니다. 그렇기 때문에 우리는 포트를 지정하지 않고 서비스를 배포하고, 도커가 임의로 할당하도록 인프라를 구성해야 합니다. 물론 포트를 미리 정의해서 구성할 수도 있겠지만 이런 구성은 문제를 야기시킵니다. 서비스의 자동 확장이 어려워 지고, 장애로 부터 자가 치유가 어려워 집니다.
 
-![](/Users/mrblue-one0/Dev/01.Project/02.GitPage/wonyoungpark.github.io/images/2018/0515_01_05.png)
+![](/images/2018/0515_01_05.png)
 
 서비스 인스턴스에는 네트워크 주소가 동적으로 할당됩니다. 또한 서비스 인스턴스 집합은 자동 확장, 해지 및 최신 버전 배포 등으로 네트워크 주소가 동적으로 변경되어야 합니다.
 
@@ -32,7 +32,7 @@ REST API를 통해 서비스를 호출 해야 한다고 가정해 보도록 하�
 
 클라이언트는 사용 가능한 서비스 인스턴스의 네트워크 주소를 찾고, 로드 밸런싱 된 요청을 보내는 일을 담당합니다. 클라이언트는 사용 가능한 서비스 인스턴스의 네트워크 주소를 Service Registry에게 요청합니다. 추후 Service Registry에 대해 다룰 예정이므로 간단하게 서비스 인스턴스의 네트워크 주소를 저장하는 저장소라고 생각하시면 될거 같습니다.
 
-![](/Users/mrblue-one0/Dev/01.Project/02.GitPage/wonyoungpark.github.io/images/2018/0515_01_01.png)
+![](/images/2018/0515_01_01.png)
 
 서비스 인스턴스가 시작될 때 서비스 인스턴스의 네트워크 주소를 Service Registry에 등록합니다. 서비스 인스턴스가 종료되면 Service Registry에서 제거합니다. 일반적으로 HeartBeat 메커니즘을 사용하여 서비스 인스턴스를 주기적으로 검사 및 최신 상태로 반영합니다.
 
@@ -56,7 +56,7 @@ Client‑Side Discovery Pattern에는 다양한 장점과 단점이 존재합니
 
 ### Server‑Side Discovery Pattern
 
-![](/Users/mrblue-one0/Dev/01.Project/02.GitPage/wonyoungpark.github.io/images/2018/0515_01_02.png)
+![](/images/2018/0515_01_02.png)
 
 클라이언트는 로드 밸런서를 통해서 서비스에 요청합니다. 로드 밸랜서는 Service Registry에서 각 요청에 대해 사용 가능한 서비스 인스턴스의 네트워크 주소를 질의하고 반환 된 네트워크 주소로 라우팅 합니다. 클라이언트 측 검색과 마찬 가지로 서비스 인스턴스는 Service Registry에 등록 및 해제 됩니다.
 
@@ -94,7 +94,7 @@ Service Registry 개념에 대해서 살펴보았습니다. 서비스 인스턴�
 
 서비스 인스턴스가 **Service Registry에 등록/해지의 책임을 가집니다.**
 
-![](/Users/mrblue-one0/Dev/01.Project/02.GitPage/wonyoungpark.github.io/images/2018/0515_01_03.png)
+![](/images/2018/0515_01_03.png)
 
 Self-Registration Pattern 에는 다양한 장점과 단점이 존재합니다.
 
@@ -119,7 +119,7 @@ Self-Registration Pattern 에는 다양한 장점과 단점이 존재합니다.
 
 Registrar는 실행 중인 서비스 인스턴스에 폴링하거나 이벤트를 구독하는 등의 작업을 통해 변경 사항을 감지하고 Service Registry 등록/해지를 수행합니다.
 
-![](/Users/mrblue-one0/Dev/01.Project/02.GitPage/wonyoungpark.github.io/images/2018/0515_01_04.png)
+![](/images/2018/0515_01_04.png)
 
 오픈소스로 [Registrator](https://github.com/gliderlabs/registrator) 오픈 프로젝트가 있습니다. Docker 컨테이너로 배포 된 서비스 인스턴스를 자동으로 등록/해지 할 수 있습니다. [Registrator](https://github.com/gliderlabs/registrator) 는 etcd alc Consul을 포함한 여러 Service Registry를 지원합니다.
 
