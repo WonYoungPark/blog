@@ -121,7 +121,7 @@ Registrar는 실행 중인 서비스 인스턴스에 폴링하거나 이벤트�
 
 ![](/images/2018/0515_01_04.png)
 
-오픈소스로 [Registrator](https://github.com/gliderlabs/registrator) 오픈 프로젝트가 있습니다. Docker 컨테이너로 배포 된 서비스 인스턴스를 자동으로 등록/해지 할 수 있습니다. [Registrator](https://github.com/gliderlabs/registrator) 는 etcd alc Consul을 포함한 여러 Service Registry를 지원합니다.
+오픈소스로 [Registrator](https://github.com/gliderlabs/registrator) 오픈 프로젝트가 있습니다. Docker 컨테이너로 배포 된 서비스 인스턴스를 자동으로 등록/해지 할 수 있습니다. [Registrator](https://github.com/gliderlabs/registrator) 는 etcd 및 Consul을 포함한 여러 Service Registry를 지원합니다.
 
 Third‑Party Registration Pattern 에는 다양한 장점과 단점이 존재합니다.
 
