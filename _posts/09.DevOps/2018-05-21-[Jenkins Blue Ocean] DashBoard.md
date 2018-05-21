@@ -1,5 +1,5 @@
 ---
-title: "Jenkins Blue Ocean-DashBoard"
+title: "[Jenkins Blue Ocean] DashBoard"
 categories: DevOps
 tags: [DevOps, Jenkins, Jenkins Pipeline, Blue Ocean]
 published: true
