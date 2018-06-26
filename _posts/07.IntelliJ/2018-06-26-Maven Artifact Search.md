@@ -1,7 +1,7 @@
 ---
 title: "Maven Artifact Search"
 categories: IntelliJ
-tags: "intellij", "인텔리", "인텔리제이"
+tags: [intellij, 인텔리, 인텔리제이]
 published: true
 comments: true
 ---
