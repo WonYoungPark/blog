@@ -30,7 +30,7 @@ comments: true
 
 [Registrator](https://github.com/gliderlabs/registrator) 는 **도커 엔진 이벤트를 모니터링 하여 배포 되거나 중지된 컨테이너에 대한 정보를 Service Registry에 보내는 역할**을 수행하는 도구 중 하나입니다.
 
-![](/Users/mrblue-one0/Dev/01.Project/02.GitPage/wonyoungpark.github.io/images/2018/0515_02_01.png)
+![](/images/2018/0515_02_01.png)
 
 
 
@@ -88,7 +88,7 @@ $ vagrant plugin install vagrant-cachier
 $ vagrant up master node-1 node-2 proxy
 ```
 
-![](/Users/mrblue-one0/Dev/01.Project/02.GitPage/wonyoungpark.github.io/images/2018/0515_02_02.png)
+![](/images/2018/0515_02_02.png)
 
 - Consul: 도커 스웜 클러스터와 그 안에 실행되는 서비스들에 대한 모든 정보를 가지고 있습니다.
 - Swarm Master: 요청 전송 기준에 따라 노드들에게 컨테이너를 실행(또는 중지) 하라는 요청을 보냅니다.
