@@ -1,3 +1,13 @@
+---
+title: "[5th] Oracle Developer Meetup"
+categories: Meetup
+tags: meetup
+published: true
+comments: true
+---
+
+
+
 오라클에서 주최하여 진행하고 있는 Oracle Developer Meetup을 다녀왔습니다. 같은 날에 스프링캠프를 진행하기 때문인지 금일 방문하신 분들이 지난번보다는 적었지만, 좋은 발표주제와 발표자 분들 덕분에 유익한 시간이였습니다.
 
 금일 발표 주제는 크게 **보안을 고려한 애플리케이션 개발 공정 및 실무적 수행 방법 소개**와 **CQRS(Command Query Responsibility Segregation) 와 Event Sourcing 패턴 실습**이였습니다. 개인적으로 CQRS가 궁금하기 위해서 밋업에 참가를 하였는데 두가지 발표 모두 유익한 내용이였습니다.

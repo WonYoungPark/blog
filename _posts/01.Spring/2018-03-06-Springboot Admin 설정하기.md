@@ -1,7 +1,9 @@
 ---
 title: "Springboot Admin 설정하기"
 categories: Spring
-tags: spring springboot admin
+tags: [spring, springboot, admin]
+published: true
+comments: true
 ---
 
 ## 1. 스프링부트 관리자란?
