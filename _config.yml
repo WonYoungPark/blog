@@ -20,9 +20,9 @@ title                    : "One0의 공부 블로그" # 블로그 좌측상단�
 title_separator          : "-"
 name                     : "박원영" # 블로그 저자 이름
 description              : "An amazing website."
-url                      : "https://blog.one0.me"
+url                      : "https://wypark2.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "wonyoungpark.github.io"
+repository               : "wyparks2.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
