@@ -20,7 +20,7 @@ title                    : "One0의 공부 블로그" # 블로그 좌측상단�
 title_separator          : "-"
 name                     : "박원영" # 블로그 저자 이름
 description              : "An amazing website."
-url                      : "https://wypark2.github.io"
+url                      : "https://wyparks2.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "wyparks2.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
