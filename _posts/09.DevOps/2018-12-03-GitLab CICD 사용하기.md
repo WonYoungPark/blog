@@ -75,7 +75,7 @@ GitLab은 Git 저장소, 이슈 트래커, 위키 등의 기능을 제공할 뿐
 
 GitLab CI/CD 환경 구성을 이해하기 쉽도록 다음과 같이 크게 세가지(`GitLab, CI Server, Application Server`)로 구분 짓도록 하겠습니다.
 
-![GitLab_CI_CD_181203-시스템_구성도_1](/images/2018/1203_01_01.png)
+![GitLab_CI_CD_181203-시스템_구성도_1](/images/2018/1203_01_01.jpg)
 
 - GitLab: 위키와 이슈 추적등 다양한 기능을 갖춘 웹 기반의 Git 저장소 관리자이며, CI/CD 기능을 제공합니다.
     - Repository: Git 저장소
@@ -178,8 +178,6 @@ docker exec -it gitlab-runner gitlab-runner register \
     --docker-image "docker:latest" \
     --docker-volumes /var/run/docker.sock:/var/run/docker.sock
 ```
-
-[IPv4 Error Solve](error/%5BSolved%5D-IPv4-forwarding-is-disabled.-Networking-will-not-work.) (성환 추가)
 
 GitLab Runner register command 속성의 의미는 다음과 같습니다.
 
