@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko" # 타킷 국가 설정
-title                    : "One0의 공부 블로그" # 블로그 좌측상단의 제목
+title                    : "바이너리 박의 공부 블로그" # 블로그 좌측상단의 제목
 title_separator          : "-"
 name                     : "박원영" # 블로그 저자 이름
 description              : "An amazing website."
